@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
+<Title>Kim's Bookmarks</Title>
 <head>
-<Title>Kim's Homepage</Title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+body {margin:0;}
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover{
+	background: #ddd;
+	color: black;
+}
+
+.main{
+	padding: 16px;
+	martin-top: 30px;
+	height: 1500px;
+}
+
 * {box-sizing: border-box;}
 body {font-family: Fantasy, Verdana, sans-serif;}
 .mySlides {display: none;}
@@ -73,25 +104,21 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
 </style>
 </head>
+
 <body>
 
-<h2>Homepage Links</h2>
-<a href="https:\\www.google.com" target="_blank">Google</a>
-<br>
-<a  href="https:\\www.instagram.com\KingMuffiiin" target="_blank">KingMuffiiin IG</a>
-<br>
-<a  href="https:\\www.instagram.com\Commonfart" target="_blank">Commonfart IG</a>
-<br>
-<a href="https:\\www.youtube.com/" target="_blank">YouTube</a>
-<br>
-<a href="https://open.spotify.com/show/6U8nXw2Cy2Vy6VsZ0peVnV" target="_blank">Martin's Podcast</a>
-<br>
-<a href="https://www.behance.net/kimberldequil" target="_blank">Kim's Behance</a>
-<br>
-<a href="https://www.jollibeefoods.com/" target="_blank">Jollibee</a>
-<br>
+<div class="navbar">
+	<a href="https:\\www.google.com" target="_blank" rel="noreferrer noopener">Google</a>
+	<a href="https://www.instagram.com/KingMuffiiin" target="_blank" rel="noreferrer noopener">KingMuffiiin IG</a>
+	<a href="https://www.instagram.com/Commonfart/" target="_blank" rel="noreferrer noopener">Commonfart IG</a>
+	<a href="https:\\www.youtube.com" target="_blank" rel="noreferrer noopener">YouTube</a>
+	<a href="https://open.spotify.com/show/6U8nXw2Cy2Vy6VsZ0peVnV" target="_blank" rel="noreferrer noopener">Podcast</a>
+	<a href="https://www.behance.net/kimberldequil" target="_blank" rel="noreferrer noopener">Kim's Behance</a>
+	<a href="https://www.jollibeefoods.com/" target="_blank" rel="noreferrer noopener">Jollibee</a>
+</div>
 
 <div class="slideshow-container">
 
@@ -114,7 +141,6 @@ img {vertical-align: middle;}
 </div>
 
 </div>
-<br>
 
 <div style="text-align:center">
   <span class="dot"></span> 
@@ -145,4 +171,5 @@ function showSlides() {
 </script>
 
 </body>
-</html> 
+
+</html>
